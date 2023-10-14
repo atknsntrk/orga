@@ -4,8 +4,15 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Help me</Text>
       <StatusBar style="auto" />
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        value={number}
+        placeholder="useless placeholder"
+        keyboardType="numeric"
+      />
     </View>
   );
 }
